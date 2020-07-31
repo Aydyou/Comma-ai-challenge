@@ -31,7 +31,7 @@ callbacks = myCallback()
 
 model = tf.keras.models.Sequential([
     # This is the first convolution
-    tf.keras.layers.Conv2D(64, (3,3), input_shape=(480,640,1), activation='relu'),
+    tf.keras.layers.Conv2D(64, (3,3), input_shape=(240,320,1), activation='relu'),
     tf.keras.layers.MaxPooling2D(2,2),
     tf.keras.layers.BatchNormalization(),
 
